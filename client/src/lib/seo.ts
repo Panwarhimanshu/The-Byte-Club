@@ -1,7 +1,7 @@
 import type { Product } from '@/types';
 import { brand } from '@/data/brand';
 
-const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://thebyteclub.example';
+const SITE_URL = import.meta.env.VITE_SITE_URL || 'https://thebyteclub.vercel.app';
 
 export const siteUrl = (path = '/') =>
   `${SITE_URL.replace(/\/$/, '')}${path.startsWith('/') ? path : `/${path}`}`;

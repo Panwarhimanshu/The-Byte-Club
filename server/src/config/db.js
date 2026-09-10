@@ -13,7 +13,10 @@ export async function connectDb() {
   let uri = env.mongoUri;
 
   if (!uri || env.useMemoryDb) {
-    const { MongoMemoryServer } = await import('mongodb-memory-server');
+    // Indirect specifier so bundlers (e.g. Vercel) don't pull this dev-only
+    // package — it's a devDependency and never loaded when MONGO_URI is set.
+    const devPkg = 'mongodb-memory-server';
+    const { MongoMemoryServer } = await import(devPkg);
     memoryServer = await MongoMemoryServer.create();
     uri = memoryServer.getUri('byteclub');
     console.log('▸ Using in-memory MongoDB (no MONGO_URI set)');

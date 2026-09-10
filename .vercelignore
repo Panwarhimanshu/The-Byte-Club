@@ -1,0 +1,7 @@
+# Not needed for the build or the serverless function
+docs/
+server/tests/
+**/*.test.js
+**/*.test.ts
+**/*.test.tsx
+.github/

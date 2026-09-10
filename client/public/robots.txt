@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thebyteclub.example/sitemap.xml
+Sitemap: https://thebyteclub.vercel.app/sitemap.xml
