@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <mask id="bite">
+      <rect width="64" height="64" fill="#fff"/>
+      <circle cx="16" cy="15" r="11" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#F7F5EE"/>
+  <path
+    mask="url(#bite)"
+    fill-rule="evenodd"
+    fill="#1A3BD4"
+    d="M12 8 L37 8 C47 8 54 14 54 22.5 C54 27.5 51.5 31.2 47.5 33.4 C52.4 35.7 55.6 40.5 55.6 46.2 C55.6 54.7 48.1 56.6 37.2 56.6 L12 56.6 C10.3 56.6 9 55.3 9 53.6 L9 11 C9 9.3 10.3 8 12 8 Z M22.5 18 L32.6 18 C36.4 18 38.8 19.8 38.8 23 C38.8 26.2 36.4 28 32.6 28 L22.5 28 Z M22.5 37 L35 37 C38.8 37 41 38.8 41 42.2 C41 45.6 38.8 47.4 35 47.4 L22.5 47.4 Z"
+  />
+</svg>

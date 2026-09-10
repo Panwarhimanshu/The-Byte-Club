@@ -1,0 +1,50 @@
+/* ───────────────────────────────────────────────
+   THE BYTE CLUB — design tokens
+   Brand: bold cobalt blue on warm cream, rounded + playful.
+   Change these to re-skin the entire brand.
+   Values are space-separated RGB channels so Tailwind
+   can apply /<alpha-value>.
+   ─────────────────────────────────────────────── */
+
+:root {
+  /* Surfaces — warm cream base, white cards */
+  --bg: 247 245 238; /* #F7F5EE warm cream */
+  --surface: 255 255 255; /* #FFFFFF */
+  --card: 255 255 255; /* #FFFFFF */
+  --border: 214 208 191; /* #D6D0BF warm light border */
+
+  /* Text */
+  --fg: 19 21 29; /* #13151D near-black, faint blue cast */
+  --muted: 104 106 118; /* #686A76 */
+
+  /* Brand */
+  --primary: 26 59 212; /* #1A3BD4 — cobalt "Byte blue" */
+  --primary-fg: 255 255 255;
+
+  --secondary: 15 33 138; /* #0F218A — deep navy for depth / hovers */
+  --secondary-fg: 255 255 255;
+
+  --accent: 240 88 40; /* #F05828 — warm coral, used sparingly */
+  --accent-fg: 255 255 255;
+
+  /* Radius + motion scales */
+  --radius: 1.25rem;
+  --ease-byte: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Optional dark variant — kept faithful to the brand (blue stays the hero),
+   enabled by adding `.dark` to <html>. The site ships light by default. */
+.dark {
+  --bg: 12 14 22;
+  --surface: 20 23 34;
+  --card: 24 27 40;
+  --border: 42 46 66;
+  --fg: 244 244 240;
+  --muted: 150 154 170;
+  --primary: 92 128 255; /* lift the blue for contrast on dark */
+  --primary-fg: 8 10 18;
+  --secondary: 150 176 255;
+  --secondary-fg: 8 10 18;
+  --accent: 255 122 82;
+  --accent-fg: 12 14 22;
+}

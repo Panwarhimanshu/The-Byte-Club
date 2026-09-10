@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#F7F5EE"/>
+  <g fill="none" stroke="#1A3BD4" stroke-opacity="0.08" stroke-width="1">
+    <path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200"/>
+    <path d="M90 0V630M180 0V630M270 0V630M360 0V630M900 0V630M990 0V630M1080 0V630"/>
+  </g>
+
+  <text x="90" y="270" font-family="Fredoka, sans-serif" font-size="150" font-weight="700" fill="#1A3BD4" letter-spacing="-3">BYTE</text>
+  <text x="90" y="410" font-family="Fredoka, sans-serif" font-size="150" font-weight="700" fill="#1A3BD4" letter-spacing="-3">CLUB</text>
+
+  <g stroke="#1A3BD4" stroke-width="10" stroke-linecap="round">
+    <line x1="470" y1="150" x2="470" y2="110"/>
+    <line x1="520" y1="165" x2="548" y2="132"/>
+    <line x1="420" y1="165" x2="392" y2="132"/>
+  </g>
+
+  <text x="92" y="495" font-family="Inter, sans-serif" font-size="30" fill="#13151D">Big flavour. Zero buffering.</text>
+  <text x="92" y="540" font-family="Inter, sans-serif" font-size="22" fill="#686A76">Burgers · Pizza · Wraps · Shakes — HSR Layout, Bengaluru</text>
+
+  <!-- drink cup -->
+  <g transform="translate(880 200)" stroke="#1A3BD4" stroke-width="9" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M20 60 L45 260 L175 260 L200 60 Z"/>
+    <path d="M8 60 L212 60"/>
+    <path d="M120 60 L150 -10 L175 -10"/>
+  </g>
+</svg>
