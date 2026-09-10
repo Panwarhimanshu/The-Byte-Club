@@ -1,7 +1,40 @@
-# Not needed for the build or the serverless function
-docs/
-server/tests/
+# When a .vercelignore exists, Vercel does NOT also read .gitignore —
+# so every exclude has to be listed here explicitly.
+
+# secrets / local env  (client/.env.production is intentionally NOT ignored)
+.env
+.env.local
+.env.*.local
+server/.env
+client/.env
+*.pem
+
+# dependencies & build output (rebuilt on Vercel)
+node_modules
+dist
+build
+client/dist
+server/dist
+*.tsbuildinfo
+
+# vcs / editor / os
+.git
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# caches
+.cache
+.vite
+.eslintcache
+coverage
+.mongodb-binaries
+
+# not needed for build or the serverless function
+docs
+server/tests
 **/*.test.js
 **/*.test.ts
 **/*.test.tsx
-.github/
+.github

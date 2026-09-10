@@ -3,6 +3,9 @@ node_modules/
 .pnp
 .pnp.js
 
+# vercel
+.vercel
+
 # env / secrets
 .env
 .env.local

@@ -36,7 +36,11 @@ export default async function handler(req, res) {
     res.setHeader('content-type', 'application/json');
     res.end(
       JSON.stringify({
-        error: { message: 'The kitchen is warming up — try again in a moment.', code: 'db_unavailable' },
+        error: {
+          message: 'The kitchen is warming up — try again in a moment.',
+          code: 'db_unavailable',
+          detail: process.env.DEBUG_BOOT ? String(err && (err.stack || err.message || err)) : undefined,
+        },
       }),
     );
     return;

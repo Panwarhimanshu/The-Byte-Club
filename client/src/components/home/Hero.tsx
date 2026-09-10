@@ -36,7 +36,7 @@ export function Hero() {
             className="eyebrow mb-5"
           >
             <span className="h-1.5 w-1.5 animate-byte-flicker bg-primary" />
-            Now serving · Bengaluru
+            Now serving · Vadodara
           </motion.span>
 
           <h1 className="font-display text-display-2xl font-bold text-primary">
@@ -61,7 +61,7 @@ export function Hero() {
             className="mt-6 max-w-md text-lg text-muted"
           >
             Burgers, pizza, wraps and shakes engineered for cravings. Cooked to order
-            in one loud little kitchen in HSR Layout, Bengaluru.
+            in one loud little kitchen in Alkapuri, Vadodara.
           </motion.p>
 
           <motion.div

@@ -22,7 +22,7 @@ export const storeSettings: StoreSettings = {
   currency: '₹',
   phone: '+91 98765 43210',
   email: 'hello@thebyteclub.example',
-  address: '12 Server Street, HSR Layout, Bengaluru 560102',
+  address: '12 Server Street, Alkapuri, Vadodara 390007',
   mapsUrl: '',
   deliveryApps: [
     { label: 'Swiggy', href: 'https://swiggy.com' },

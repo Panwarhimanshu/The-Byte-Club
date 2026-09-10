@@ -9,7 +9,7 @@ const storeSettingsSchema = new mongoose.Schema(
     currency: { type: String, default: '₹' },
     phone: { type: String, default: '+91 98765 43210' },
     email: { type: String, default: 'hello@thebyteclub.example' },
-    address: { type: String, default: '12 Server Street, HSR Layout, Bengaluru 560102' },
+    address: { type: String, default: '12 Server Street, Alkapuri, Vadodara 390007' },
     mapsUrl: { type: String, default: '' },
     deliveryApps: {
       type: [{ label: String, href: String, _id: false }],
