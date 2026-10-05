@@ -11,7 +11,7 @@ export function LocationSection() {
       <SectionHeading
         eyebrow="Find us"
         title={<>One kitchen. <span className="text-primary">For now.</span></>}
-        description="Dine-in, pickup or delivery across Vadodara."
+        description="Pickup, or delivery via Porter and Rapido across Vadodara."
       />
 
       <div className="mt-10 grid gap-4 overflow-hidden rounded-3xl border border-border lg:grid-cols-2">

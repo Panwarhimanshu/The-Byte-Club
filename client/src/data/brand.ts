@@ -20,18 +20,16 @@ export const storeSettings: StoreSettings = {
   brandName: 'The Byte Club',
   tagline: 'Big flavour. Zero buffering.',
   currency: '₹',
-  phone: '+91 98765 43210',
+  phone: '+91 70164 59825',
   email: 'hello@thebyteclub.example',
-  address: '12 Server Street, Alkapuri, Vadodara 390007',
+  address: 'Cloud kitchen · Vasna & Manjalpur, Vadodara',
   mapsUrl: '',
   deliveryApps: [
-    { label: 'Swiggy', href: 'https://swiggy.com' },
-    { label: 'Zomato', href: 'https://zomato.com' },
+    { label: 'Porter', href: 'https://porter.in' },
+    { label: 'Rapido', href: 'https://rapido.bike' },
   ],
   hours: [
-    { day: 'Mon–Thu', open: '11:00', close: '23:00' },
-    { day: 'Fri–Sat', open: '11:00', close: '01:00' },
-    { day: 'Sunday', open: '12:00', close: '23:00' },
+    { day: 'Mon–Sun', open: '12:00', close: '23:00' },
   ],
   socials: [
     { label: 'Instagram', href: 'https://instagram.com' },

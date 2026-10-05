@@ -47,9 +47,9 @@ export default function ContactPage() {
 
         <div className="mt-10 grid gap-3 sm:grid-cols-3">
           {[
-            { icon: Store, title: 'Dine in', body: 'Walk in, grab a stool, watch the grill.' },
-            { icon: UtensilsCrossed, title: 'Pickup', body: 'Call ahead, skip the wait, collect at the counter.' },
-            { icon: Bike, title: 'Delivery', body: 'Find us on Swiggy & Zomato across Vadodara.' },
+            { icon: Store, title: 'Free delivery', body: 'Free delivery on orders above ₹1,500.' },
+            { icon: UtensilsCrossed, title: 'Pickup', body: 'Collect from our cloud kitchen in Vasna & Manjalpur.' },
+            { icon: Bike, title: 'Delivery', body: 'Via Porter and Rapido across Vadodara.' },
           ].map((w) => (
             <div key={w.title} className="rounded-2xl border border-border bg-card p-5">
               <w.icon size={18} className="text-primary" />

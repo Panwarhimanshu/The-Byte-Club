@@ -18,8 +18,8 @@ const MARQUEE = [
   'BUNS BAKED DAILY',
   'IN-HOUSE SAUCES',
   'ONE LOUD KITCHEN',
-  'ALKAPURI, VADODARA',
-  'DINE-IN · PICKUP · DELIVERY',
+  'VASNA & MANJALPUR, VADODARA',
+  'PICKUP · PORTER · RAPIDO',
 ];
 
 export default function HomePage() {

@@ -25,9 +25,7 @@ export async function ensureAdmin() {
 }
 
 const DEFAULT_HOURS = [
-  { day: 'Mon–Thu', open: '11:00', close: '23:00' },
-  { day: 'Fri–Sat', open: '11:00', close: '01:00' },
-  { day: 'Sunday', open: '12:00', close: '23:00' },
+  { day: 'Mon–Sun', open: '12:00', close: '23:00' },
 ];
 const DEFAULT_SOCIALS = [
   { label: 'Instagram', href: 'https://instagram.com' },

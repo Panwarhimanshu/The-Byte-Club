@@ -61,7 +61,7 @@ export function Hero() {
             className="mt-6 max-w-md text-lg text-muted"
           >
             Burgers, pizza, wraps and shakes engineered for cravings. Cooked to order
-            in one loud little kitchen in Alkapuri, Vadodara.
+            from our cloud kitchen in Vasna & Manjalpur, Vadodara.
           </motion.p>
 
           <motion.div
@@ -93,11 +93,11 @@ export function Hero() {
             transition={{ delay: 0.9 }}
             className="mt-8 flex items-center gap-6 font-mono text-xs uppercase tracking-widest text-muted"
           >
-            <span>Dine-in</span>
+            <span>Pickup</span>
             <span className="h-3 w-px bg-border" />
             <span>Pickup</span>
             <span className="h-3 w-px bg-border" />
-            <span>On Swiggy &amp; Zomato</span>
+            <span>Porter &amp; Rapido</span>
           </motion.div>
         </motion.div>
 

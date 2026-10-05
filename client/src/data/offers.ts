@@ -5,7 +5,7 @@ export const offers: Offer[] = [
   {
     id: 'o_bogo',
     title: 'Buy 1 Get 1 — Classic Byte',
-    description: 'Every Tuesday & Wednesday, dine-in. Two Classic Bytes for the price of one.',
+    description: 'Every Tuesday & Wednesday. Two Classic Bytes for the price of one.',
     code: 'DOUBLECLICK',
     type: 'bogo',
     value: 100,
@@ -44,7 +44,7 @@ export const offers: Offer[] = [
   {
     id: 'o_firstbyte',
     title: 'First Byte — ₹75 off your first order',
-    description: 'New to the club? ₹75 off your first order on Swiggy or Zomato.',
+    description: 'New to the club? ₹75 off your first order via Porter or Rapido.',
     code: 'FIRSTBYTE',
     type: 'flat',
     value: 75,
