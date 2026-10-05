@@ -809,6 +809,32 @@ export const products: Product[] = [
     optionGroups: [],
     addOns: [{ id: 'add_extra_dip', label: 'Extra signature dip', price: 25 }],
   },
+  {
+    id: 'p_chipotle_cluck',
+    name: 'Chipotle Cluck',
+    slug: 'chipotle-cluck',
+    description:
+      'Crispy chicken loaded with fresh lettuce and onions, finished with our creamy, smoky chipotle sauce inside a toasted bun.',
+    longDescription:
+      'Crispy chicken loaded with fresh lettuce and onions, finished with our creamy, smoky chipotle sauce inside a toasted bun. Smoky, saucy with just the right kick.',
+    price: 259,
+    category: 'burgers',
+    image: '/products/chipotle-cluck.jpg',
+    gallery: ['/products/chipotle-cluck.jpg'],
+    ingredients: ['Crispy chicken', 'Fresh lettuce', 'Onions', 'Smoky chipotle sauce', 'Toasted bun'],
+    tags: ['chicken', 'spicy', 'smoky'],
+    isVeg: false,
+    isBestseller: false,
+    isFeatured: false,
+    isAvailable: true,
+    spiceLevel: 2,
+    kcal: 650,
+    prepTimeMins: 8,
+    rating: 4.7,
+    ratingCount: 0,
+    optionGroups: [sizeGroup([0, 60, 120]), sauceGroup],
+    addOns: burgerAddOns,
+  },
 ];
 
 export const findProduct = (slug: string) => products.find((p) => p.slug === slug);
