@@ -76,8 +76,8 @@ export const STORIES: IngredientStory[] = [
 ];
 
 export const OUTRO_ITEMS = [
-  { name: 'The Classic Byte', slug: 'classic-byte', price: 229 },
-  { name: 'Double Stack Overflow', slug: 'double-stack-overflow', price: 319 },
-  { name: 'Crispy Chick Commit', slug: 'crispy-chick-commit', price: 279 },
-  { name: 'Paneer Protocol', slug: 'paneer-protocol', price: 249 },
+  { name: 'Double Trouble', slug: 'double-trouble', price: 319 },
+  { name: 'The OG Smash', slug: 'og-smash', price: 299 },
+  { name: 'Hot Honey Hush', slug: 'hot-honey-hush', price: 289 },
+  { name: 'Chipotle Cluck', slug: 'chipotle-cluck', price: 259 },
 ];
