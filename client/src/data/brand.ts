@@ -32,7 +32,7 @@ export const storeSettings: StoreSettings = {
     { day: 'Mon–Sun', open: '12:00', close: '23:00' },
   ],
   socials: [
-    { label: 'Instagram', href: 'https://instagram.com' },
+    { label: 'Instagram', href: 'https://www.instagram.com/the_byte.club' },
     { label: 'TikTok', href: 'https://tiktok.com' },
     { label: 'X', href: 'https://x.com' },
     { label: 'YouTube', href: 'https://youtube.com' },

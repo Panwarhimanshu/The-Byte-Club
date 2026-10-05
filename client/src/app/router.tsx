@@ -13,6 +13,7 @@ const AboutPage = lazy(() => import('@/pages/AboutPage'));
 const ContactPage = lazy(() => import('@/pages/ContactPage'));
 const LegalPage = lazy(() => import('@/pages/LegalPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
+const PrintMenuPage = lazy(() => import('@/pages/PrintMenuPage'));
 
 const AdminLoginPage = lazy(() => import('@/pages/admin/AdminLoginPage'));
 const DashboardPage = lazy(() => import('@/pages/admin/DashboardPage'));
@@ -41,6 +42,7 @@ export const router = createBrowserRouter([
     ],
   },
 
+  { path: '/poster-menu', element: <PrintMenuPage /> },
   { path: '/admin/login', element: <AdminLoginPage /> },
   {
     path: '/admin',

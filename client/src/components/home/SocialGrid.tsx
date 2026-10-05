@@ -9,12 +9,12 @@ export function SocialGrid() {
   return (
     <section className="section container">
       <SectionHeading
-        eyebrow="@thebyteclub"
+        eyebrow="@the_byte.club"
         title={<>Tag us. We’ll <span className="text-primary">repost</span> you.</>}
-        description="Placeholder feed — swap for a live Instagram embed at launch."
+        description="Follow us on Instagram for the latest reels, drops and behind-the-grill moments."
         action={
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/the_byte.club"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-pill border border-border px-4 py-2 font-display text-sm font-semibold uppercase tracking-wide transition hover:border-primary hover:text-primary btn-focus"
@@ -35,7 +35,7 @@ export function SocialGrid() {
           <motion.a
             key={post.id}
             variants={fadeUp}
-            href="https://instagram.com"
+            href="https://www.instagram.com/the_byte.club"
             target="_blank"
             rel="noopener noreferrer"
             className="group relative aspect-square overflow-hidden rounded-xl border border-border"

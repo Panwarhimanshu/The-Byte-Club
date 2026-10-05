@@ -28,7 +28,7 @@ const DEFAULT_HOURS = [
   { day: 'Mon–Sun', open: '12:00', close: '23:00' },
 ];
 const DEFAULT_SOCIALS = [
-  { label: 'Instagram', href: 'https://instagram.com' },
+  { label: 'Instagram', href: 'https://www.instagram.com/the_byte.club' },
   { label: 'TikTok', href: 'https://tiktok.com' },
   { label: 'X', href: 'https://x.com' },
 ];
