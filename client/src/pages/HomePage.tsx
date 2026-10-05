@@ -6,7 +6,6 @@ import { FeaturedRail } from '@/components/home/FeaturedRail';
 import { BestSellers } from '@/components/home/BestSellers';
 import { WhyByteClub } from '@/components/home/WhyByteClub';
 import { SpecialOffer } from '@/components/home/SpecialOffer';
-import { ShowcaseScroller } from '@/components/home/ShowcaseScroller';
 import { ReviewsWall } from '@/components/home/ReviewsWall';
 import { SocialGrid } from '@/components/home/SocialGrid';
 import { LocationSection } from '@/components/home/LocationSection';
@@ -37,7 +36,6 @@ export default function HomePage() {
       <BestSellers />
       <WhyByteClub />
       <SpecialOffer />
-      <ShowcaseScroller />
       <ReviewsWall />
       <SocialGrid />
       <LocationSection />
