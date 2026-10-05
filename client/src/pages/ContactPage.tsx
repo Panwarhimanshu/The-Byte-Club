@@ -117,6 +117,21 @@ export default function ContactPage() {
               </div>
             </InfoRow>
 
+            <div className="card-byte flex flex-col items-center gap-4 p-6 text-center sm:flex-row sm:text-left">
+              <img
+                src="/brand/google-qr-sticker.jpg"
+                alt="Google Business Profile QR code for The Byte Club"
+                width={900}
+                height={1004}
+                loading="lazy"
+                className="h-44 w-auto shrink-0 rounded-xl"
+              />
+              <div>
+                <p className="font-display text-base font-bold uppercase">Check us out on Google</p>
+                <p className="mt-1 text-sm text-muted">Scan the code with your phone to see our reviews, photos and hours on Google.</p>
+              </div>
+            </div>
+
             <div className="overflow-hidden rounded-2xl border border-border">
               {mapsUrl ? (
                 <iframe
