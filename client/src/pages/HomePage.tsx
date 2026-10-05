@@ -5,7 +5,6 @@ import { CategoryGrid } from '@/components/home/CategoryGrid';
 import { FeaturedRail } from '@/components/home/FeaturedRail';
 import { BestSellers } from '@/components/home/BestSellers';
 import { WhyByteClub } from '@/components/home/WhyByteClub';
-import { SpecialOffer } from '@/components/home/SpecialOffer';
 import { ReviewsWall } from '@/components/home/ReviewsWall';
 import { SocialGrid } from '@/components/home/SocialGrid';
 import { LocationSection } from '@/components/home/LocationSection';
@@ -35,7 +34,6 @@ export default function HomePage() {
       <CategoryGrid />
       <BestSellers />
       <WhyByteClub />
-      <SpecialOffer />
       <ReviewsWall />
       <SocialGrid />
       <LocationSection />
