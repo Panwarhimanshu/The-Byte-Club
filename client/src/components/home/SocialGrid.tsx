@@ -1,7 +1,7 @@
 import { Instagram, Play } from 'lucide-react';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { SmartImage } from '@/components/ui/SmartImage';
-import { socialPosts } from '@/data/social';
+import { socialGrid } from '@/data/social';
 import { reels } from '@/data/reels';
 
 const IG_PROFILE = 'https://www.instagram.com/the_byte.club';
@@ -72,25 +72,27 @@ export function SocialGrid() {
       )}
 
       <h3 className="mt-12 font-mono text-xs uppercase tracking-widest text-muted">Posts</h3>
-      <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
-        {socialPosts.map((post) => (
+      <div className="mx-auto mt-4 grid max-w-3xl grid-cols-3 gap-1 sm:gap-1.5">
+        {socialGrid.map((post) => (
           <a
             key={post.id}
             href={IG_PROFILE}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative aspect-square overflow-hidden rounded-xl border border-border"
+            aria-label="Open on Instagram"
+            className="group relative aspect-[3/4] overflow-hidden bg-border/40"
           >
             <SmartImage
               src={post.image}
-              alt={post.caption}
+              alt="Byte Club on Instagram"
               width={480}
               wrapperClassName="absolute inset-0"
-              className="transition-transform duration-500 group-hover:scale-110"
+              className="transition-transform duration-500 group-hover:scale-105"
             />
+            {post.reel && <Play size={16} className="absolute right-2 top-2 fill-white text-white drop-shadow" />}
           </a>
         ))}
       </div>
-    </section>
+        </section>
   );
 }
