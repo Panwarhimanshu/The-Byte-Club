@@ -4,6 +4,7 @@ import { useSettings } from '@/hooks/queries';
 
 export function LocationSection() {
   const { data: settings } = useSettings();
+  const mapsUrl = import.meta.env.VITE_MAPS_EMBED_URL;
   if (!settings) return null;
 
   return (
@@ -15,17 +16,27 @@ export function LocationSection() {
       />
 
       <div className="mt-10 grid gap-4 overflow-hidden rounded-3xl border border-border lg:grid-cols-2">
-        <div className="relative min-h-[280px] bg-grid-byte bg-grid-16">
-          <div className="absolute inset-0 grid place-items-center">
-            <div className="flex flex-col items-center gap-2 text-center">
-              <span className="grid h-12 w-12 place-items-center rounded-full bg-primary text-primary-fg">
-                <MapPin size={20} />
-              </span>
-              <p className="font-mono text-xs uppercase tracking-widest text-muted">
-                Map embed placeholder
-              </p>
+        <div className="relative min-h-[280px] overflow-hidden bg-grid-byte bg-grid-16">
+          {mapsUrl ? (
+            <iframe
+              title="Map to The Byte Club, Vadodara"
+              src={mapsUrl}
+              className="absolute inset-0 h-full w-full border-0"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          ) : (
+            <div className="absolute inset-0 grid place-items-center">
+              <div className="flex flex-col items-center gap-2 text-center">
+                <span className="grid h-12 w-12 place-items-center rounded-full bg-primary text-primary-fg">
+                  <MapPin size={20} />
+                </span>
+                <p className="font-mono text-xs uppercase tracking-widest text-muted">
+                  Map embed placeholder
+                </p>
+              </div>
             </div>
-          </div>
+          )}
         </div>
 
         <div className="grid gap-5 p-8">
