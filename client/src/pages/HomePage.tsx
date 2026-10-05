@@ -1,7 +1,6 @@
 import { SEO } from '@/components/ui/SEO';
 import { Hero } from '@/components/home/Hero';
 import { Marquee } from '@/components/ui/Marquee';
-import { CategoryGrid } from '@/components/home/CategoryGrid';
 import { FeaturedRail } from '@/components/home/FeaturedRail';
 import { BestSellers } from '@/components/home/BestSellers';
 import { WhyByteClub } from '@/components/home/WhyByteClub';
@@ -31,7 +30,6 @@ export default function HomePage() {
       <Hero />
       <Marquee items={MARQUEE} />
       <FeaturedRail />
-      <CategoryGrid />
       <BestSellers />
       <WhyByteClub />
       <ReviewsWall />
