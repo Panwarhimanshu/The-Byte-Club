@@ -1,16 +1,14 @@
-import { motion } from 'framer-motion';
 import { Instagram, Play } from 'lucide-react';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { SmartImage } from '@/components/ui/SmartImage';
 import { socialPosts } from '@/data/social';
 import { reels } from '@/data/reels';
-import { fadeUp, revealViewport, stagger } from '@/lib/motion';
 
 const IG_PROFILE = 'https://www.instagram.com/the_byte.club';
 
 export function SocialGrid() {
   return (
-    <section className="section container">
+    <section id="social" className="section container scroll-mt-24">
       <SectionHeading
         eyebrow="@the_byte.club"
         title={<>Reels & <span className="text-primary">posts</span> from the grill.</>}
@@ -29,17 +27,10 @@ export function SocialGrid() {
 
       <h3 className="mt-10 font-mono text-xs uppercase tracking-widest text-muted">Reels</h3>
       {reels.length > 0 ? (
-        <motion.div
-          variants={stagger(0.05)}
-          initial="hidden"
-          whileInView="show"
-          viewport={revealViewport}
-          className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4"
-        >
+        <div className="mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
           {reels.map((reel, i) => (
-            <motion.a
+            <a
               key={reel.url}
-              variants={fadeUp}
               href={reel.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -64,9 +55,9 @@ export function SocialGrid() {
                   {reel.caption}
                 </span>
               )}
-            </motion.a>
+            </a>
           ))}
-        </motion.div>
+        </div>
       ) : (
         <a
           href={IG_PROFILE}
@@ -81,17 +72,10 @@ export function SocialGrid() {
       )}
 
       <h3 className="mt-12 font-mono text-xs uppercase tracking-widest text-muted">Posts</h3>
-      <motion.div
-        variants={stagger(0.04)}
-        initial="hidden"
-        whileInView="show"
-        viewport={revealViewport}
-        className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4"
-      >
+      <div className="mt-4 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4">
         {socialPosts.map((post) => (
-          <motion.a
+          <a
             key={post.id}
-            variants={fadeUp}
             href={IG_PROFILE}
             target="_blank"
             rel="noopener noreferrer"
@@ -104,9 +88,9 @@ export function SocialGrid() {
               wrapperClassName="absolute inset-0"
               className="transition-transform duration-500 group-hover:scale-110"
             />
-          </motion.a>
+          </a>
         ))}
-      </motion.div>
+      </div>
     </section>
   );
 }
