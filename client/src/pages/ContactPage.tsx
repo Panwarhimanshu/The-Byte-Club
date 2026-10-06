@@ -10,6 +10,7 @@ import { useUIStore } from '@/store/uiStore';
 import { contactSchema, type ContactForm } from '@/lib/validation';
 import { storeSettings } from '@/data/brand';
 import { OrderChannels } from '@/components/ui/OrderChannels';
+import { GOOGLE_REVIEW_URL } from '@/data/links';
 
 export default function ContactPage() {
   const { data: settings = storeSettings } = useSettings();
@@ -134,6 +135,16 @@ export default function ContactPage() {
               <div>
                 <p className="font-display text-base font-bold uppercase">Check us out on Google</p>
                 <p className="mt-1 text-sm text-muted">Scan the code with your phone to see our reviews, photos and hours on Google.</p>
+                {GOOGLE_REVIEW_URL && (
+                  <a
+                    href={GOOGLE_REVIEW_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-3 inline-flex h-10 items-center rounded-pill bg-primary px-5 font-display text-xs font-bold uppercase tracking-wide text-primary-fg transition hover:opacity-90 btn-focus"
+                  >
+                    ★ Write a review
+                  </a>
+                )}
               </div>
             </div>
 
