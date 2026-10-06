@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { MessageCircle, Instagram } from 'lucide-react';
 import { track } from '@/lib/analytics';
 
@@ -38,6 +39,55 @@ export function OrderChannels({ compact = false }: { compact?: boolean }) {
           <Instagram size={18} /> Order on Instagram DM
         </a>
       </div>
+    </div>
+  );
+}
+
+/**
+ * Per-product order buttons. WhatsApp opens with the product already in the message.
+ * Instagram DMs can't be pre-filled from a link, so that button copies the message
+ * to the clipboard and opens the DM — the customer pastes it and sends.
+ */
+export function ProductOrderButtons({ name, price }: { name: string; price: string }) {
+  const [copied, setCopied] = useState(false);
+  const message = `Hi Byte Club! I'd like to order: ${name} (${price}). Pickup or delivery?`;
+  const waUrl = `https://wa.me/917016459825?text=${encodeURIComponent(message)}`;
+
+  const onInstagram = async () => {
+    track('order_instagram_click', { product: name });
+    try {
+      await navigator.clipboard.writeText(message);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 4000);
+    } catch {
+      /* clipboard blocked — the DM still opens */
+    }
+    window.open(INSTAGRAM_DM_URL, '_blank', 'noopener,noreferrer');
+  };
+
+  return (
+    <div className="space-y-2">
+      <div className="flex flex-wrap gap-2">
+        <a
+          href={waUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => track('order_whatsapp_click', { product: name })}
+          className="inline-flex h-11 items-center gap-2 rounded-pill bg-[#25d366] px-5 font-display text-sm font-bold uppercase tracking-wide text-white transition hover:opacity-90 btn-focus"
+        >
+          <MessageCircle size={16} /> Order on WhatsApp
+        </a>
+        <button
+          type="button"
+          onClick={onInstagram}
+          className="inline-flex h-11 items-center gap-2 rounded-pill border border-border px-5 font-display text-sm font-bold uppercase tracking-wide transition hover:border-primary hover:text-primary btn-focus"
+        >
+          <Instagram size={16} /> Order on Instagram
+        </button>
+      </div>
+      {copied && (
+        <p className="text-xs text-muted">Order message copied — paste it in the Instagram chat and send.</p>
+      )}
     </div>
   );
 }

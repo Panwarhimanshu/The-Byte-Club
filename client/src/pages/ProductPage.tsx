@@ -17,6 +17,7 @@ import { formatMoney, formatDate, initials } from '@/lib/format';
 import { productJsonLd, breadcrumbJsonLd } from '@/lib/seo';
 import { track } from '@/lib/analytics';
 import { storeSettings } from '@/data/brand';
+import { ProductOrderButtons } from '@/components/ui/OrderChannels';
 
 export default function ProductPage() {
   const { slug } = useParams();
@@ -165,6 +166,12 @@ function ProductView({ slug }: { slug: string }) {
                 ? 'Order on WhatsApp or Instagram DM — pickup, or free delivery above ₹1,500.'
                 : 'Not on the board right now — check back soon.'}
             </p>
+            {product.isAvailable && (
+              <div className="mt-4">
+                <ProductOrderButtons name={product.name} price={formatMoney(product.price)} />
+              </div>
+            )}
+
             <div className="mt-4 flex flex-wrap gap-2">
               <ButtonLink as="link" to="/contact" size="md">
                 <MapPin size={14} /> Find us
