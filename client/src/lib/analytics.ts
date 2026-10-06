@@ -9,7 +9,9 @@ type AnalyticsEvent =
   | 'view_offers'
   | 'search'
   | 'find_us_click'
-  | 'delivery_app_click';
+  | 'delivery_app_click'
+  | 'order_whatsapp_click'
+  | 'order_instagram_click';
 
 const DEBUG = import.meta.env.DEV;
 

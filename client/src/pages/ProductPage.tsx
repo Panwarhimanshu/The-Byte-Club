@@ -162,7 +162,7 @@ function ProductView({ slug }: { slug: string }) {
             </p>
             <p className="mt-1 text-sm text-muted">
               {product.isAvailable
-                ? 'Order at the counter, on pickup, or through a delivery app.'
+                ? 'Order on WhatsApp or Instagram DM — pickup, or free delivery above ₹1,500.'
                 : 'Not on the board right now — check back soon.'}
             </p>
             <div className="mt-4 flex flex-wrap gap-2">

@@ -8,6 +8,7 @@ import { ReviewsWall } from '@/components/home/ReviewsWall';
 import { SocialGrid } from '@/components/home/SocialGrid';
 import { LocationSection } from '@/components/home/LocationSection';
 import { CtaBanner } from '@/components/home/CtaBanner';
+import { OrderChannels } from '@/components/ui/OrderChannels';
 import { restaurantJsonLd } from '@/lib/seo';
 
 const MARQUEE = [
@@ -34,6 +35,9 @@ export default function HomePage() {
       <WhyByteClub />
       <ReviewsWall />
       <SocialGrid />
+      <section className="section container">
+        <OrderChannels />
+      </section>
       <LocationSection />
       <CtaBanner />
     </>

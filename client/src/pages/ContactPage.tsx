@@ -9,6 +9,7 @@ import { useSettings } from '@/hooks/queries';
 import { useUIStore } from '@/store/uiStore';
 import { contactSchema, type ContactForm } from '@/lib/validation';
 import { storeSettings } from '@/data/brand';
+import { OrderChannels } from '@/components/ui/OrderChannels';
 
 export default function ContactPage() {
   const { data: settings = storeSettings } = useSettings();
@@ -76,6 +77,10 @@ export default function ContactPage() {
             ))}
           </div>
         ) : null}
+
+        <div className="mt-12">
+          <OrderChannels />
+        </div>
 
         <div className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.1fr]">
           <div className="space-y-6">
